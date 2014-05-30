@@ -61,9 +61,12 @@ Once you have a fader object instantiated and bound to your FastLED interface, y
 The `fader.clear` function quickly resets the LED strip.
 
 ### FastFader& set_pixel(int pos, int value, int channel);
-### FastFader& set_pixel(int pos, int value[3]);
-### FastFader& set_pixel(int pos, int value);
-### FastFader& set_pixel(int pos);
+
+AKA:
+
+* `FastFader& set_pixel(int pos, int value[3]);` (takes an array of r, g, and b values)
+* `FastFader& set_pixel(int pos, int value);` (pushes a single value to r, g, and b channels)
+* `FastFader& set_pixel(int pos);` (turns on a single pixel to fullbrightness)
 
 The `fader.set_pixel` function sets an individual pixel by position, value, and channel. Value and Channel are optional arguments. If you call `set_pixel` with no channel, it defaults to all three (Red, Green, and Blue). If you call `set_pixel` with no channel and no value, it assumes a value of 255. Value can be passed as a three-dimensional integer array, or as a single integer (to apply to all three channels).
 
@@ -80,9 +83,12 @@ The `fader.set_frame` function loads an entire array of pixels into your light s
 Any data passed to `set_frame` that's outside of valid ranges will be clipped.
 
 ### FastFader& push(int fader_delay, int fader_steps, int decay_type);
-### FastFader& push(int fader_delay, int fader_steps);
-### FastFader& push(int fader_delay);
-### FastFader& push();
+
+AKA:
+
+* `FastFader& push(int fader_delay, int fader_steps);` (assumes LOGARITHMIC_DECAY)
+* `FastFader& push(int fader_delay);` (assumes ten cross-fade steps)
+* `FastFader& push();` (assumes ten cross-fade steps over 100 miliseconds)
 
 The `fader.push` function sends data to the LED strip through a cross-fader and ditherer. The first two parameters control the timing of the cross-fade. `fader_delay` tells it how many miliseconds to take for the fade, and the `fader_steps` parameter tells it how many divisions of color-space to traverse on its way to the new frame.
 
