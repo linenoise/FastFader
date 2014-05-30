@@ -3,6 +3,8 @@ FastFader
 
 This is an [Arduino](http://arduino.cc/) library that implements a fast cross-fader and pixel buffer for use with LED lighting strips. It pairs with the [FastLED library](http://fastled.io/) to produce smooth, fast animations on WS2810, WS2811, LPD8806, Neopixel and [other types of lighting strips](https://github.com/FastLED/FastLED/wiki/Chipset-reference).
 
+This summary is also available at <http://dann.stayskal.com/software/fastfader/>.
+
 Prerequisites
 -------------
 
