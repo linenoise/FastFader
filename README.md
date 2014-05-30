@@ -54,13 +54,13 @@ Usage
 
 To see example lighting demonstrations, check out the `examples` folder of this codebase.
 
-Once you have a fader object instantiated and bound to your FastLED interface, you have the following additional functions available with which to communicate with your LED strip:
+Once you have a fader object instantiated and bound to your FastLED interface, you have the following additional functions available with which to communicate with your LED strip. All functions other than get_pixel return a reference to the fader object, so calls can be chained if desired, e.g. `fader.clear().set_frame(your_array).push()`.
 
-### FastFader& clear();
+### clear();
 
 The `fader.clear` function quickly resets the LED strip.
 
-### FastFader& set_pixel(int pos, int value, int channel);
+### set_pixel(int pos, int value, int channel);
 
 AKA:
 
@@ -72,17 +72,17 @@ The `fader.set_pixel` function sets an individual pixel by position, value, and 
 
 Any data passed to `set_pixel` that's outside of valid ranges will be clipped.
 
-### int* get_pixel(int pos);
+### get_pixel(int pos);
 
 The `fader.get_pixel` function returns a three-dimensional integer array of the present red, green, and blue channel values at a given position.
 
-### FastFader& set_frame(int (*frame)[3]);
+### set_frame(int (*frame)[3]);
 
 The `fader.set_frame` function loads an entire array of pixels into your light strip at once. Its dimensions should match the length of your strip.
 
 Any data passed to `set_frame` that's outside of valid ranges will be clipped.
 
-### FastFader& push(int fader_delay, int fader_steps, int decay_type);
+### push(int fader_delay, int fader_steps, int decay_type);
 
 AKA:
 
