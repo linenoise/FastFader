@@ -5,6 +5,8 @@ This is an [Arduino](http://arduino.cc/) library that implements a fast cross-fa
 
 This summary is also available at <http://dann.stayskal.com/software/fastfader/>.
 
+![FastFader Demonstration Image](http://dann.stayskal.com/images/software/fastfader_header.jpg)
+
 Prerequisites
 -------------
 
