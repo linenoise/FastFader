@@ -2,9 +2,9 @@
 ||
 || @file    Twinkle.pde
 || @version 1.0
-|| @author  Dann Stayskal
-|| @contact dann@stayskal.com
-|| @support http://dann.stayskal.com/software/fastfader
+|| @author  Danne Stayskal
+|| @contact danne@stayskal.com
+|| @support http://danne.stayskal.com/software/fastfader
 ||
 || @description
 || | This is a graphical demonstration that runs on an LED strip.
@@ -12,7 +12,7 @@
 || #
 ||
 || @changelog
-|| | 1.0 2014-05-29 - Dann Stayskal : Initial Release
+|| | 1.0 2014-05-29 - Danne Stayskal : Initial Release
 || #
 ||
 || @license
@@ -34,7 +34,7 @@
 */
 
 #include "FastLED.h"    // https://github.com/FastLED/FastLED
-#include "FastFader.h"  // https://github.com/danndalf/fastfader
+#include "FastFader.h"  // https://github.com/linenoise/fastfader
 
 // How many LEDs are in the strip
 #define NUM_LEDS 18

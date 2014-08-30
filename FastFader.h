@@ -2,15 +2,15 @@
 ||
 || @file FastFader.h
 || @version 1.0
-|| @author Dann Stayskal
-|| @contact dann@stayskal.com
+|| @author Danne Stayskal
+|| @contact danne@stayskal.com
 ||
 || @description
 || | Provides a fast, cross-fading pixelbuffer to the FastLED library
 || #
 ||
 || @changelog
-|| | 1.0 2014-05-29 - Dann Stayskal : Initial Release
+|| | 1.0 2014-05-29 - Danne Stayskal : Initial Release
 || #
 ||
 || @license
